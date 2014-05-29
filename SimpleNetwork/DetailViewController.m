@@ -44,9 +44,18 @@
                                NSError *jsonParseError;
                                NSDictionary *pastry = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&jsonParseError];
                                
-                               self.pastryDescription.text = pastry[@"description"];
-                               self.pastryImage.image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:pastry[@"imageURL"]]]];
                                self.pastryTitle.text = pastry[@"name"];
+                               self.pastryDescription.text = pastry[@"description"];
+                               
+                               dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
+                                   
+                                   UIImage *img = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:pastry[@"imageURL"]]]];
+                                   
+                                   dispatch_async(dispatch_get_main_queue(), ^(void) {
+                                       self.pastryImage.image = img;
+                                   });
+                                   
+                               });
      }];
 }
 

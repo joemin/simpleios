@@ -33,7 +33,8 @@
     NSURL *URL = [NSURL URLWithString:@"http://localhost:9292/pastries.json"];
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     
-    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue]
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:[NSOperationQueue mainQueue]
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
                                
                                NSError *jsonParseError;
