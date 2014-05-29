@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322684B419367D1E006FE144 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322684B319367D1E006FE144 /* DetailViewController.m */; };
 		B6CDC34B1927E43400739547 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CDC34A1927E43400739547 /* Foundation.framework */; };
 		B6CDC34D1927E43400739547 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CDC34C1927E43400739547 /* CoreGraphics.framework */; };
 		B6CDC34F1927E43400739547 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CDC34E1927E43400739547 /* UIKit.framework */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		322684B219367D1E006FE144 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		322684B319367D1E006FE144 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		B6CDC3471927E43400739547 /* SimpleNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CDC34A1927E43400739547 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6CDC34C1927E43400739547 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -84,6 +87,8 @@
 				B6CDC3591927E43400739547 /* AppDelegate.h */,
 				B6CDC35A1927E43400739547 /* AppDelegate.m */,
 				B6CDC35C1927E43400739547 /* Main.storyboard */,
+				322684B219367D1E006FE144 /* DetailViewController.h */,
+				322684B319367D1E006FE144 /* DetailViewController.m */,
 				B6CDC37F1927E47A00739547 /* CakeTableViewController.h */,
 				B6CDC3801927E47A00739547 /* CakeTableViewController.m */,
 				B6CDC3621927E43400739547 /* Images.xcassets */,
@@ -171,6 +176,7 @@
 				B6CDC35B1927E43400739547 /* AppDelegate.m in Sources */,
 				B6CDC3571927E43400739547 /* main.m in Sources */,
 				B6CDC3811927E47A00739547 /* CakeTableViewController.m in Sources */,
+				322684B419367D1E006FE144 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
